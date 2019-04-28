@@ -64,20 +64,6 @@ void loop(){
     startup = 2;
   }
 
-//  if(startup == 1)
-//  { 
-//    ServoD2.write(15);
-//    delay(1000);
-//    ServoD3.write(30);
-//    delay(1000); 
-//    ServoD1.write(-15);
-//    delay(1000); 
-//    ServoD2.write(35);
-//    ServoD3.write(0);
-//    delay(3000);
-//    startup = 1;
-//  }
-
   if(startup == 2)
   { 
     ServoA2.write(90);
@@ -125,83 +111,30 @@ void loop(){
     delay(1000);
     ServoB2.write(15);
     delay(1000);
-    startup = 0;
-    
-//    ServoB1.write(90);
-//    
-//    ServoB3.write(20);
+    startup = 7;
     
   }
 
+  if(startup == 7)
+  {
+    ServoA1.write(15);
+    ServoA2.write(65);
+    ServoA3.write(70);
+    
+    ServoB1.write(90);
+    ServoB2.write(15);
+    ServoB3.write(20);
 
+    ServoC1.write(90);
+    ServoC2.write(65);
+    ServoC3.write(90);
 
-//  if(startup == 3)
-//  { 
-//    ServoC1.write(120);
-//    delay(1000); 
-//    startup = 3;
-//  }
-//
-//  if(startup == 3)
-//  { 
-//    ServoB1.write(120);
-//    delay(1000); 
-//    startup = 0;
-//  }
-
-  
-//  if(startup == 22)
-//  { 
-//    ServoB2.write(0);
-//    delay(1000); 
-//    ServoB3.write(60);
-//    delay(1000); 
-//    ServoB1.write(45);    
-//    delay(1000); 
-//    startup = 3;
-//  }
-//
-//  if(startup == 3)
-//  { 
-//    ServoB2.write(15);
-//    ServoB3.write(20);
-//    delay(1000); 
-//    startup = 4;
-//  }
-//
-//  if(startup == 4)
-//  { 
-//    ServoC1.write(45);
-//    delay(1000); 
-//    startup = 6;
-//
-//  }
-//
-//   if(startup == 76)
-//  { 
-//    ServoD1.write(0);
-//    delay(1000); 
-//    startup = 16;
-//
-//  }
-//
-//  if(startup == 7)
-//  { 
-//    ServoB2.write(0);
-//    delay(1000); 
-//    ServoB3.write(60);
-//    delay(1000); 
-//    ServoB1.write(10);    
-//    delay(1000);  
-//    startup = 7;
-//
-//  }
-//  if(startup == 71)
-//  { 
-//    ServoB2.write(15);
-//    ServoB3.write(20);
-//    delay(1000); 
-//    startup = 0;
-//  }
+    //ServoD1.write(0);
+    ServoD2.write(25);
+    ServoD3.write(10);
+    
+    ServoD1.write(45);
+    startup = 0;
+  }
   
 }
